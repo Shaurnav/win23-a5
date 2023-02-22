@@ -39,7 +39,7 @@ if [[ $($CALCULATOR 4 - 11) -ne -7 ]]; then
 fi
 
 # Test 07: Testing chained outputs.
-if [[ $($CALCULATOR $($CALCULATOR 4 - 11) / -7) -ne 1] ]; then
+if [[ $($CALCULATOR $($CALCULATOR 4 - 11) / -7) -ne 1 ]]; then
     echo 'ERROR! valid run of chained calculator ((4 - 11)/-7) failed to produce 1.'
     exit 1
 fi
